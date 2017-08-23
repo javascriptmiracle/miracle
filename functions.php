@@ -20,6 +20,10 @@ add_theme_support( 'post-thumbnails', array( 'post' ) );
 
 register_nav_menu('menu',  'меню в шапке');
 
+
+
+
+
 $args = array (
     'name' => 'Виджет sidebar',
     'id'   => 'sidebar',
@@ -31,6 +35,18 @@ $args = array (
     
 
 );
+
+add_action('admin_menu', 'register_my_custom_submenu_page');
+ 
+function register_my_custom_submenu_page() {
+    add_submenu_page(
+        'tools.php',
+        'Submenu Page',
+        'My Custom Submenu Page',
+        'manage_options',
+        'my-custom-submenu-page',
+        'my_custom_submenu_page_content' );
+}
 
 function theme_prefix_setup() {
 	

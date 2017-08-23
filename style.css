@@ -79,7 +79,7 @@ Version: 1.0.1
 	color: transparent;
 	background-color: transparent;
 	border: none;
-	background-image: url("../image/search.png");
+	background-image: url("image/search.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	width: 30px;
@@ -514,7 +514,7 @@ Version: 1.0.1
 }
 
 .main-slider .bx-wrapper .bx-prev {
-	background: url("../image/content/left-arrow.png") no-repeat;
+	background: url("image/content/left-arrow.png") no-repeat;
 	background-position: center center;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -522,7 +522,7 @@ Version: 1.0.1
 }
 
 .main-slider .bx-wrapper .bx-next {
-	background: url("../image/content/right-arrow.png") no-repeat;
+	background: url("image/content/right-arrow.png") no-repeat;
 	background-position: center center;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -539,7 +539,7 @@ Version: 1.0.1
 }
 
 .slider .bx-wrapper .bx-prev {
-	background: url("../image/content/left-arrow.png") no-repeat;
+	background: url("image/content/left-arrow.png") no-repeat;
 	background-position: center center;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -547,7 +547,7 @@ Version: 1.0.1
 }
 
 .slider .bx-wrapper .bx-next {
-	background: url("../image/content/right-arrow.png") no-repeat;
+	background: url("image/content/right-arrow.png") no-repeat;
 	background-position: center center;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;

@@ -23,10 +23,16 @@
               <div class="col-md-5">
                 <div class="row">
                   <div class="col-md-6">
-                    <div class="input">
-                      <input type="text" class="input__search" name="s"/>
-                      <input type="submit" class="input__button"/>
-                    </div>
+                  <form  method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
+                
+                      <div class="input">
+                          
+                        <input type="text" value="<?php the_search_query(); ?>" name="s" id="s" class="input__search"/>
+                        <input type="submit" id="searchsubmit" class="input__button" />
+                       
+                      </div>
+                     
+                    </form>
                   </div>
                   <div class="col-md-6">
                     <div class="header-top__link">
@@ -45,7 +51,7 @@
           </div>
           <div class="row header__mid">
             <div class="header-mid">
-              <div class="col-md-2"><?php the_custom_logo( ) ?> </div>
+              <div class="col-md-2"><?php the_custom_logo() ?> </div>
               <div class="col-md-6">
                 <div class="header-mid__title">
                   <div class="title">

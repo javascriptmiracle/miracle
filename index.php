@@ -104,7 +104,7 @@
                           <li class="culture-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -119,7 +119,7 @@
                           <li class="culture-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -134,7 +134,7 @@
                           <li class="culture-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -149,7 +149,7 @@
                           <li class="culture-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -164,7 +164,7 @@
                           <li class="culture-list__item culture-lsit__item_last">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -187,7 +187,7 @@
                           <li class="culture-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -202,7 +202,7 @@
                           <li class="culture-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -217,7 +217,7 @@
                           <li class="culture-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -232,7 +232,7 @@
                           <li class="culture-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -247,7 +247,7 @@
                           <li class="culture-list__item culture-lsit__item_last">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -270,7 +270,7 @@
                           <li class="culture-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover">
@@ -306,7 +306,7 @@
                           <li class="event-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover square-hover_another">
@@ -321,7 +321,7 @@
                           <li class="event-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover square-hover_another">
@@ -336,7 +336,7 @@
                           <li class="event-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover square-hover_another">
@@ -351,7 +351,7 @@
                           <li class="event-list__item">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover square-hover_another">
@@ -366,7 +366,7 @@
                           <li class="event-list__item event-list__item_last">
                             <div class="square js-square">
                               <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="image/content/square.jpg" alt="" width="100"/></div>
+                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
                                   <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
                               <div class="square__inner-hover"><a href="">
                                   <div class="square-hover square-hover_another">
@@ -400,10 +400,10 @@
                       <div class="sponsor-list">
                         <div class="sponsor-list__inner">
                           <ul class="row">
-                            <li class="sponsor-list__item"><img src="image/content/square.jpg" alt="" width="100"/></li>
-                            <li class="sponsor-list__item"><img src="image/content/square.jpg" alt="" width="100"/></li>
-                            <li class="sponsor-list__item"><img src="image/content/square.jpg" alt="" width="100"/></li>
-                            <li class="sponsor-list__item"><img src="image/content/square.jpg" alt="" width="100"/></li>
+                            <li class="sponsor-list__item"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></li>
+                            <li class="sponsor-list__item"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></li>
+                            <li class="sponsor-list__item"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></li>
+                            <li class="sponsor-list__item"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></li>
                             <li class="sponsor-list__item sponsor-list__item_last"><img src="image/content/square.jpg" alt="" width="100"/></li>
                           </ul>
                         </div>
@@ -413,11 +413,11 @@
                       <div class="sponsor-list">
                         <div class="sponsor-list__inner">
                           <ul class="row">
-                            <li class="sponsor-list__item"><img src="image/content/square.jpg" alt="" width="100"/></li>
-                            <li class="sponsor-list__item"><img src="image/content/square.jpg" alt="" width="100"/></li>
-                            <li class="sponsor-list__item"><img src="image/content/square.jpg" alt="" width="100"/></li>
-                            <li class="sponsor-list__item"><img src="image/content/square.jpg" alt="" width="100"/></li>
-                            <li class="sponsor-list__item sponsor-list__item_last"><img src="image/content/square.jpg" alt="" width="100"/></li>
+                            <li class="sponsor-list__item"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></li>
+                            <li class="sponsor-list__item"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></li>
+                            <li class="sponsor-list__item"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></li>
+                            <li class="sponsor-list__item"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></li>
+                            <li class="sponsor-list__item sponsor-list__item_last"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></li>
                           </ul>
                         </div>
                       </div>
