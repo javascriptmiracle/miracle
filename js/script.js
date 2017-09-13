@@ -179,3 +179,14 @@ $(document).ready(function(){
 		}
 	);
 })
+
+
+
+$(document).ready(function(){
+	
+	$('.nav ').append('<div class="clear"></div>')
+	$('.menu .sub-menu ').append('<div class="clear"></div>')
+
+})
+
+

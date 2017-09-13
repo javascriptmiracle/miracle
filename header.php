@@ -16,7 +16,7 @@
               <div class="col-md-7">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="header-top__button"><a href="#" class="button">Контакты								</a></div>
+                    <div class="header-top__button"><a href="http://localhost/work/wordpress/контакты" class="button"> Контакты				</a></div>
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@
           </div>
           <div class="row header__bottom">
 
-          <?php wp_nav_menu(array('theme_location' => 'menu', 'menu_class' => 'nav')) ?>          
+          <?php wp_nav_menu(array('theme_location'  => 'menu', 'menu_class' => 'nav', )) ?>          
            
           </div>
         </div>

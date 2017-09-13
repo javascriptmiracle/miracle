@@ -67,27 +67,37 @@
                 </h1>
               </div>
               <div class="news__block row">
-              <?php if ( have_posts() ) : ?>
-                <?php while ( have_posts() ) : the_post(); ?>    
-                <div class="col-md-4">               
+
+               <?php // Display blog posts on any page @ http://m0n.co/l
+        $temp = $wp_query; $wp_query= null;
+        $wp_query = new WP_Query(); $wp_query->query('showposts=3' . '&paged='.$paged);
+        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+          <div class="col-md-4">               
                   <div class="news-block">
                     <div class="news-block__inner">
-                      <div class="news-block__image"><a href=""><img src="image/content/image1.jpg" alt="" width="300"/></a></div><a href="#" class="news-block__title">
-                        <?php  the_title(  )?>
-                      </a>
-                      <p class="news-block__text">
+                      <div class="news-block__image"><a href="<?php the_permalink(); ?>"><img src="image/content/image1.jpg" alt="" width="300"/></a></div><a href="#" class="news-block__title">
+                      <?php the_title(); ?>
+                        </a>
+                          <p class="news-block__text">
                         <?php the_content() ?>
                       </p>
-                      <div class="news-block__link"> <a href="#" class="link link_blue">читать статью			</a></div>
-                    </div>
+                      <div class="news-block__link"> <a href="<?php the_permalink(); ?>" class="link link_blue">читать статью     </a></div>
+                        </div>
                   </div>
                 </div>
-                <?php endwhile; ?>
-              <?php endif; ?>               
-                
-              </div>
-            </div>
-          </div>
+          <div class="clear"></div>
+
+       
+       
+ 
+        <?php endwhile; ?>
+ 
+       
+
+ 
+        <?php wp_reset_postdata(); ?>
+
+             
           <div id="network" class="content__culture">
             <div class="culture row">
               <div class="culture__title">
