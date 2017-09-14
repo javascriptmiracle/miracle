@@ -47,11 +47,7 @@
                   <div class="news-contact__form">
                     <form action="">
                       <div class="subscribe">
-                        <div class="subscribe__title">Подписка на рассылку новостей</div>
-                        <div class="subscribe__input">
-                          <input type="text" class="subscribe-input"/>
-                        </div>
-                        <div class="subscribe__button"><a href="" class="link">Зарегистрироваться</a></div>
+                     <?php the_widget( 'WYSIJA_NL_Widget' ); ?>
                       </div>
                     </form>
                   </div>
@@ -68,34 +64,46 @@
               </div>
               <div class="news__block row">
 
-               <?php // Display blog posts on any page @ http://m0n.co/l
-        $temp = $wp_query; $wp_query= null;
-        $wp_query = new WP_Query(); $wp_query->query('showposts=3' . '&paged='.$paged);
-        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                <?php
+$args = array(
+  'post_type' => 'page',
+  'posts_per_page' => 3,
+);
+$query = new WP_Query();
+$my_posts = $query->query($args);
+
+ while ($query->have_posts()) : $query->the_post(); ?>
           <div class="col-md-4">               
                   <div class="news-block">
                     <div class="news-block__inner">
-                      <div class="news-block__image"><a href="<?php the_permalink(); ?>"><img src="image/content/image1.jpg" alt="" width="300"/></a></div><a href="#" class="news-block__title">
+                      <div class="news-block__image"><a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail(  ); ?></a></div><a href="<?php the_permalink(); ?>" class="news-block__title">
                       <?php the_title(); ?>
                         </a>
                           <p class="news-block__text">
-                        <?php the_content() ?>
+                        <?php echo wp_trim_words(get_the_content(), 10, '...') ?>
                       </p>
                       <div class="news-block__link"> <a href="<?php the_permalink(); ?>" class="link link_blue">читать статью     </a></div>
                         </div>
                   </div>
                 </div>
-          <div class="clear"></div>
+       
 
        
        
  
         <?php endwhile; ?>
+           <div class="clear"></div>
  
        
 
  
         <?php wp_reset_postdata(); ?>
+     
+
+
+
+          
+       
 
              
           <div id="network" class="content__culture">
@@ -126,180 +134,21 @@
                                   </div></a></div>
                             </div>
                           </li>
-                          <li class="culture-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="culture-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="culture-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="culture-list__item culture-lsit__item_last">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
+                         
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="culture-row__item">
-                    <div class="culture-row__inner">
-                      <div class="culture-list">
-                        <ul class="row">
-                          <li class="culture-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="culture-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="culture-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="culture-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="culture-list__item culture-lsit__item_last">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="culture-row__item">
-                    <div class="culture-row__inner">
-                      <div class="culture-list">
-                        <ul class="row">
-                          <li class="culture-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
+            
+
+
+
+
+
+       
+         
           <div id="event" class="content__event">
             <div class="event row">
               <div class="event__title">
@@ -328,66 +177,7 @@
                                   </div></a></div>
                             </div>
                           </li>
-                          <li class="event-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover square-hover_another">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="event-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover square-hover_another">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="event-list__item">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover square-hover_another">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
-                          <li class="event-list__item event-list__item_last">
-                            <div class="square js-square">
-                              <div class="square__inner"><a href="">
-                                  <div class="square__image"><img src="<?php  bloginfo( 'template_url' )?>/image/content/square.jpg" alt="" width="100"/></div>
-                                  <div class="square__text"> Институт Сорбонна-Казахстан</div></a></div>
-                              <div class="square__inner-hover"><a href="">
-                                  <div class="square-hover square-hover_another">
-                                    <div class="square-hover__title">Институт Сорбонна-Казахстан</div>
-                                    <div class="square-hover__border"></div>
-                                    <div class="square-hover__button">
-                                      <div class="register">Представление</div>
-                                    </div>
-                                  </div></a></div>
-                            </div>
-                          </li>
+                         
                         </ul>
                       </div>
                     </div>
@@ -395,7 +185,8 @@
                 </div>
               </div>
             </div>
-          </div>
+        
+
           <div id="sponsor" class="content__sponsor">
             <div class="sponsor">
               <div class="sponsor__title">
@@ -403,7 +194,7 @@
                   <div class="main-title__border"></div>
                 </div>
               </div>
-              <div class="sponsor__list">
+              <div class="sponsor__list  row">
                 <div class="slider">
                   <ul class="bxslider-sponsor">
                     <li class="slider__list">

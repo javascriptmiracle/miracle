@@ -417,6 +417,10 @@ Version: 1.0.1
 	margin-right: 0;
 }
 
+.sponsor__list {
+	
+}
+
 .sponsor-list__item {
 	float: left;
 	width: 215px;

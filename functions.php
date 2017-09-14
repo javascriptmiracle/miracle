@@ -122,21 +122,41 @@ function my_wp_nav_menu_objects_sub_menu( $sorted_menu_items, $args ) {
   }
 }
 
+function wpdocs_five_posts_on_homepage( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 5 );
+    }
+}
+add_action( 'pre_get_posts', 'wpdocs_five_posts_on_homepage' );
 
-function true_apply_categories_for_pages(){
-    add_meta_box( 'categorydiv', 'Категории', 'post_categories_meta_box', 'page', 'side', 'normal'); // добавляем метабокс категорий для страниц
-    register_taxonomy_for_object_type('category', 'page'); // регистрируем рубрики для страниц
+
+function my_custom_post_product() {
+  $labels = array(
+    'name'               => _x( 'Products', 'post type general name' ),
+    'singular_name'      => _x( 'Product', 'post type singular name' ),
+    'add_new'            => _x( 'Add New', 'book' ),
+    'add_new_item'       => __( 'Add New Product' ),
+    'edit_item'          => __( 'Edit Product' ),
+    'new_item'           => __( 'New Product' ),
+    'all_items'          => __( 'All Products' ),
+    'view_item'          => __( 'View Product' ),
+    'search_items'       => __( 'Search Products' ),
+    'not_found'          => __( 'No products found' ),
+    'not_found_in_trash' => __( 'No products found in the Trash' ), 
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Products'
+  );
+  $args = array(
+    'labels'        => $labels,
+    'description'   => 'Holds our products and product specific data',
+    'public'        => true,
+    'menu_position' => 5,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+    'has_archive'   => true,
+  );
+  register_post_type( 'product', $args ); 
 }
-// обязательно вешаем на admin_init
-add_action('admin_init','true_apply_categories_for_pages');
- 
-function true_expanded_request_category($q) {
-    if (isset($q['category_name'])) // если в запросе присутствует параметр рубрики
-        $q['post_type'] = array('post', 'page'); // то, помимо записей, выводим также и страницы
-    return $q;
-}
- 
-add_filter('request', 'true_expanded_request_category');
+add_action( 'init', 'my_custom_post_product' );
 
 
 
